@@ -1,10 +1,28 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import RecipeList from './components/recipe_list';
+import RecipePost from './components/recipe_post';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { VoiceRecognition } from './components/voice';
+
+export function FallBack(props) {
+  return <div>URL Not Found</div>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <BrowserRouter>
+     <div className="App">
+     <VoiceRecognition />
+      {/* <RecipeList /> */}
+      <Routes>
+        <Route path="/" element={<RecipeList />} />
+        <Route path="/:recipeID" element={<RecipePost />} />
+        <Route path="*" element={<FallBack />} />
+      </Routes>
+      
+      {
+      /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,8 +35,11 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
+    
+    </BrowserRouter>
+   
   );
 }
 

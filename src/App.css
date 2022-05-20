@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+.recipe-screen-header {
+  font-size: 40px;
+  font-weight: 800;
+  padding-right: 18%;
+  padding-bottom: 2%;
+}
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.recipe-container {
+  width: 50vw;
+  height: 300px;
+  background-color: rgb(135, 224, 185);
+  margin: 10px;
+  border: #282c34 2px;
+}
+
+.recipe-ingredient {
+  padding: 10px;
+}
+
+.recipe-name {
+  font-weight: 700;
+  padding: 10px;
+}
