@@ -1,0 +1,50 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 60vw;
+    height: 100vh;
+}
+
+.logo{
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+}
+.search_bar{
+    position: absolute;
+    top:40vh;
+    left:12vw;
+    width:40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 400px;
+}
+.textfield{
+    min-width: 300px;
+    width: 37vw;
+}
+.otherinput{
+    position: absolute;
+    top: 55vh;
+    left: 20vw;
+}
+.display{
+    height: 40vh;
+    width: 45vw;
+    position: absolute;
+    left: -10vw;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+
+}
