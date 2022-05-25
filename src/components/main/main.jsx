@@ -7,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 import { uploadDocuments } from "../image-upload/image-uploader";
+import {RecipeListItem} from "../reciptitem/reciptitem"
 
 export default function Main(){
 
@@ -63,8 +64,13 @@ export default function Main(){
                  </div>
              </div>
              <div className = "right">
-
-             </div>
+            <ul className='recipe-list'>
+            <div className='recipe-screen-header'>Recipe Results</div>
+            <RecipeListItem />
+            <RecipeListItem />
+            <RecipeListItem />
+        </ul>
         </div>
+             </div>
     )
 }

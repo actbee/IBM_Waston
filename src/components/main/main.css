@@ -6,8 +6,15 @@
 }
 
 .left{
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
+    min-width: 480px;
+}
+
+.right{
+    width: 45vw;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .logo{
@@ -48,3 +55,16 @@
     display: flex;
 
 }
+
+.recipe-screen-header {
+    font-size: 40px;
+    font-weight: 800;
+    padding-right: 18%;
+    padding-bottom: 2%;
+  }
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
