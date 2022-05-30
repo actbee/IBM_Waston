@@ -1,0 +1,48 @@
+{
+  "name": "FR",
+  "version": "0.2.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-flip-move": "^3.0.4",
+    "react-scripts": "^1.1.5",
+    "react-syntax-highlighter": "^7.0.4",
+    "reast": "^0.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
